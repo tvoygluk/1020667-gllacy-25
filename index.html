@@ -93,10 +93,10 @@
             </label>
             <input class="password-input" type="password" name="sing-in-password" id="sing-in-password" placeholder="Пароль">
             <div class="buttons">
-              <button class="sing-in-button" type="submit">
+              <button class="sing-in-button">
                 Войти
               </button>
-              <div class="check-in-list">
+              <ul class="check-in-list">
                 <li>
                   <a class="forgot-password?" href="#">
                     Забыли пароль?
@@ -107,7 +107,7 @@
                     Новая регистрация
                   </a>
                 </li>
-              </div>
+              </ul>
             </div>
           </form>
           <a class="cart-empty-link" href="#">
@@ -139,13 +139,59 @@
             </span>
           </a>
           <section class="pre-order none-class">
+            <h2 class="visually-hidden">Выбранные товары</h2>
             <ul class="pre-order-list">
-              <li></li>
-              <li></li>
+              <li class="pre-order-item">
+                <button class="item-close" type="button" aria-label="Удалить товар">
+                  <svg class="item-close-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
+                    <path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"/>
+                  </svg>
+                </button>
+                <a class="pre-order-link" href="#">
+                  <img class="little-pic-icecream" src="img/sundae-with-orange-jam-little.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                  <h3 class="pre-order-title">
+                    Пломбир с апельсиновым джемом
+                  </h3>
+                </a>
+                <p class="money-math">
+                  <span class="count-kilo">1,5</span>
+                  <span class="count-kilo-after">кг х</span>
+                  <span class="price-kilo price-sundae-with-orange-jam">200</span>
+                  <span class="price-currency">руб.</span>
+                  <span class="sum-price">300</span>
+                  <span class="sum-price-currency">руб.</span>
+                </p>
+              </li>
+              <li class="pre-order-item">
+                <button class="item-close" type="button" aria-label="Удалить товар">
+                  <svg class="item-close-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11">
+                    <path fill="#231F20" d="M10.979.728l-.708-.707L5.5 4.792.729.021.021.728 4.793 5.5.021 10.271l.707.708L5.5 6.207l4.771 4.772.708-.708L6.207 5.5z"/>
+                  </svg>
+                </button>
+                <a class="pre-order-link" href="#">
+                  <img class="little-pic-icecream" src="img/strawberry-ice-cream-with-powder-white-chocolate-little.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                  <h3 class="pre-order-title">
+                      Клубничный пломбир с присыпкой из белого шоколада
+                  </h3>
+                </a>
+                <p class="money-math">
+                  <span class="count-kilo">1,5</span>
+                  <span class="count-kilo-after">кг х</span>
+                  <span class="price-kilo price-strawberry-ice-cream-with-powder-white-chocolate">300</span>
+                  <span class="price-currency">руб.</span>
+                  <span class="sum-price">450</span>
+                  <span class="sum-price-currency">руб.</span>
+                </p>
+              </li>
             </ul>
-            <button>
+            <p class="result">
+              <span class="result-text">Итого:</span>
+              <span class="result-count">750</span>
+              <span class="result-currency">руб.</span>
+            </p>
+            <a class="checkout-order" href="#">
               Оформить заказ
-            </button>
+            </a>
           </section>
         </div>
         <span class="basic-middle-schedule">
