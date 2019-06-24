@@ -51,6 +51,15 @@ input[type="radio"].visually-hidden {
   width: 1200px;
 }
 
+.catalog-list,
+.new-icecream-list,
+.check-in-list,
+.pre-order-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
  /* ================================= header-common ================================= */
  /* ================================= main-index ================================= */
  /* ================================= footer-common ================================= */
