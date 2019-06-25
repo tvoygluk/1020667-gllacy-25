@@ -1,3 +1,4 @@
+/* ================================= html ================================= */
 html {
   box-sizing: border-box;
   min-width: 960px;
@@ -60,7 +61,283 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
- /* ================================= header-common ================================= */
- /* ================================= main-index ================================= */
- /* ================================= footer-common ================================= */
- /* ================================= main-catalog ================================= */
+/* ================================= header/ header-common ================================= */
+.header-common {
+  display: flex;
+  margin-top: 9px;
+}
+
+/* ================================= header/ logo-gllacy-link ================================= */
+.logo-gllacy-link {
+  margin-right: 10px;
+}
+
+/* ================================= header/ header-nav ================================= */
+.header-nav {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.05;
+  margin-right: auto;
+  margin-top: 20.5px;
+  position: relative;
+}
+
+.header-nav > * {
+  color: #ffffff;
+}
+
+/* ================================= header/ catalog-link ================================= */
+.catalog-link {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-left: 13px;
+  margin-right: 24px;
+}
+
+.catalog-link:hover {
+  background-color: #f7f6f3;
+  border-radius: 16px/50%;
+  border-width: 0px;
+  color: #323232;
+  margin: 0px 10px 0px 0px;
+  padding: 6px 14px 7px 13px;
+}
+
+.catalog-link:focus {
+  background-color: #f7f6f3;
+  border-radius: 16px/50%;
+  border-width: 0px;
+  color: #323232;
+  margin: 0px 10px 0px 0px;
+  padding: 6px 14px 7px 13px;
+}
+
+.catalog-link:active {
+  background-color: #ededed;
+  box-shadow: inset 0px 2px 1px 0 #696969;
+  border-radius: 16px/50%;
+  border-width: 0px;
+  color: #323232;
+  margin: 0px 10px 0px 0px;
+  padding: 6px 14px 7px 13px;
+}
+
+/* ================================= header/ catalog-list ================================= */
+.catalog-link:hover + .catalog-list {
+  display: block;
+}
+
+.catalog-link:focus + .catalog-list {
+  display: block;
+}
+
+.catalog-list {
+  background-color: #f8f7f4;
+  border-radius: 4px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  left: -7px;
+  position: absolute;
+  top: 30px;
+}
+
+.catalog-list a {
+  color:#323232;
+  display: inline-flex;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.new-icecream-link-top {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  margin: 0px 9px 0px 6px;
+  padding: 10px 57px 12px 14px;
+}
+
+.new-icecream-item {
+  display: flex;
+}
+
+.new-icecream-link {
+  font-weight: 400;
+  margin-top: 4px;
+  padding: 6px 18px 6px 20px;
+  width: 100%;
+}
+
+.new-icecream-item:last-of-type .new-icecream-link {
+  margin-bottom: 8px;
+}
+
+.new-icecream-link:hover {
+  background-color: #fbded8;
+}
+
+.new-icecream-link:focus {
+  background-color: #fbded8;
+}
+
+.new-icecream-link:active {
+  background-color: #f6b5a5;
+}
+/* ================================= header/ delivery-payment-link ================================= */
+.delivery-payment-link {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-right: 25px;
+}
+
+.delivery-payment-link:hover {
+  background-color: #f7f6f3;
+  border-radius: 16px/50%;
+  border-width: 0px;
+  color: #323232;
+  margin: 0px 11px 0px -13px;
+  padding: 6px 14px 7px 13px;
+}
+
+.delivery-payment-link:focus {
+  background-color: #f7f6f3;
+  border-radius: 16px/50%;
+  border-width: 0px;
+  color: #323232;
+  margin: 0px 11px 0px -13px;
+  padding: 6px 14px 7px 13px;
+}
+
+.delivery-payment-link:active {
+  background-color: #ededed;
+  box-shadow: inset 0px 2px 1px 0 #696969;
+  border-radius: 16px/50%;
+  border-width: 0px;
+  color: #323232;
+  margin: 0px 11px 0px -13px;
+  padding: 6px 14px 7px 13px;
+}
+
+/* ================================= header/ about-company-link ================================= */
+.about-company-link {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.about-company-link:hover {
+  background-color: #f7f6f3;
+  border-radius: 16px/50%;
+  border-width: 0px;
+  color: #323232;
+  margin: 0px 11px 0px -13px;
+  padding: 6px 14px 7px 13px;
+}
+
+.about-company-link:focus {
+  background-color: #f7f6f3;
+  border-radius: 16px/50%;
+  border-width: 0px;
+  color: #323232;
+  margin: 0px 11px 0px -13px;
+  padding: 6px 14px 7px 13px;
+}
+
+.about-company-link:active {
+  background-color: #ededed;
+  box-shadow: inset 0px 2px 1px 0 #696969;
+  border-radius: 16px/50%;
+  border-width: 0px;
+  color: #323232;
+  margin: 0px 11px 0px -13px;
+  padding: 6px 14px 7px 13px;
+}
+/* ================================= header/ basic-usefulness ================================= */
+.basic-usefulness {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-top: 14px;
+}
+
+/* ================================= header/ basic-top ================================= */
+.basic-top {
+  display: flex;
+  margin-bottom: 18px;
+}
+
+/* ================================= header/ search-form ================================= */
+.search-button {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  border-width: 0px;
+  cursor: pointer;
+  display: inline-flex;
+}
+
+.search-icon {
+  fill: #ffffff;
+  height: 17px;
+  margin: 6px 1px 6px 1px;
+  width: 17px;
+}
+
+/* ================================= header/ sing-in-link ================================= */
+.sing-in-link {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px/50%;
+  display: flex;
+  margin-left: 10px;
+}
+
+.sing-in-icon {
+  fill: #ffffff;
+  height: 19px;
+  margin: 6px 5px 5px 16px;
+  width: 21px;
+}
+
+.sing-in-text {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  margin: 8px 16px 9px 2px;
+}
+
+/* ================================= header/ cart-empty-link ================================= */
+.cart-empty-link {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px/50%;
+  display: flex;
+  margin-left: 10px;
+}
+
+.cart-empty-icon {
+  fill: #ffffff;
+  height: 20px;
+  margin: 6px 5px 5px 16px;
+  width: 21px;
+}
+
+.cart-empty-text {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  margin: 8px 17px 8px 2px;
+}
+
+/* ================================= header/ basic-middle-schedule ================================= */
+.basic-middle-schedule {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.14;
+  margin-bottom: 5px;
+}
+
+/* ================================= header/ basic-bottom-phone ================================= */
+.basic-bottom-phone {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.09;
+  margin-right: -1px;
+}
+
+/* ================================= main-index ================================= */
+/* ================================= footer-common ================================= */
+/* ================================= main-catalog ================================= */
