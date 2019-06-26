@@ -33,33 +33,34 @@ document.addEventListener("click", evt => {
   }
 });
 
-var searchButton = document.querySelector(".search-button-wrapper");
-var modalBackground = document.querySelector(".modal-background");
+// var searchButton = document.querySelector(".search-button-wrapper");
+// var modalBackground = document.querySelector(".modal-background");
 
-const makeVisibleModalBackground = () => {
-  modalBackground.classList.add("make-visible");
-}
 
-const unMakeVisibleModalBackground = () => {
-  modalBackground.classList.remove("make-visible");
-}
+// const makeVisibleModalBackground = () => {
+//   modalBackground.classList.add("make-visible");
+// }
 
-const toggleModalBackground = () => {
-  modalBackground.classList.toggle("make-visible");
-}
+// const unMakeVisibleModalBackground = () => {
+//   modalBackground.classList.remove("make-visible");
+// }
 
-searchButton.addEventListener("mouseenter", () => {
-  // evt.preventDefault();
-  makeVisibleModalBackground();
-});
+// const toggleModalBackground = () => {
+//   modalBackground.classList.toggle("make-visible");
+// }
 
-searchButton.addEventListener("mouseleave", () => {
-  // evt.preventDefault();
-  unMakeVisibleModalBackground();
-});
+// searchButton.addEventListener("mouseenter", () => {
+//   // evt.preventDefault();
+//   makeVisibleModalBackground();
+// });
 
-searchButton.addEventListener("click", evt => {
-  evt.preventDefault();
-  toggleModalBackground
-});
+// searchButton.addEventListener("mouseleave", () => {
+//   // evt.preventDefault();
+//   unMakeVisibleModalBackground();
+// });
+
+// searchButton.addEventListener("click", evt => {
+//   evt.preventDefault();
+//   toggleModalBackground();
+// });
 

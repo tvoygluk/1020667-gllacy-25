@@ -307,12 +307,29 @@ ul.catalog-list.make-visible {
   position: relative;
 }
 
+.search-form:hover {
+  display: block;
+}
+
+.search-form:hover .modal-background {
+  display: block;
+}
+
+.search-form:hover .search-input-wrapper {
+  display: block;
+}
+
+.search-button-wrapper:hover ~ .search-input-wrapper {
+  display: block;
+}
+
+.modal-background:hover {
+  display: block;
+}
 /* ================================= header/ search-button ================================= */
-/* .search-button-wrapper {
-  z-index: 10;
-} */
-.search-button.zindex20 {
-  z-index: 20;
+
+.z-1 {
+  z-index: -1;
 }
 
 .search-button {
@@ -321,6 +338,7 @@ ul.catalog-list.make-visible {
   border-width: 0px;
   cursor: pointer;
   display: inline-flex;
+  z-index: 55;
 }
 
 .search-icon {
@@ -332,7 +350,6 @@ ul.catalog-list.make-visible {
 
 .search-button-wrapper:hover .search-button {
   background-color: #f8f7f4;
-  /* z-index: 15; */
 }
 
 .search-button-wrapper:hover .search-icon {
@@ -341,7 +358,6 @@ ul.catalog-list.make-visible {
 
 .search-button-wrapper:focus .search-button {
   background-color: #f8f7f4;
-  /* z-index: 15; */
 }
 
 .search-button-wrapper:focus .search-icon {
@@ -351,17 +367,20 @@ ul.catalog-list.make-visible {
 /* ================================= header/ search-input-wrapper ================================= */
 .search-input-wrapper {
   display: none;
+/* display: block; */
   position: absolute;
-  z-index: 15;
+  top: 50px;
+  left: -150px;
+  /* z-index: 55; */
 }
 
-.search-button-wrapper:hover + .search-input-wrapper {
+/* .search-button-wrapper:hover + .search-input-wrapper {
   display: block;
 }
 
 .search-button-wrapper:focus + .search-input-wrapper {
   display: block;
-}
+} */
 
 .modal-background {
   background-color: rgba(0, 0, 0, 0.2);
@@ -371,7 +390,7 @@ ul.catalog-list.make-visible {
   position: fixed;
   top: 0px;
   width: 100%;
-  z-index: 1;
+  z-index: -1;
 }
 
 .modal-background.make-visible {
