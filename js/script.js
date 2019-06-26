@@ -1,13 +1,13 @@
 var openCatalogList = document.querySelector(".catalog-link");
 var catalogList = document.querySelector(".catalog-list");
-var catalogLink = document.querySelectorAll(".new-icecream-link"), index, a;
-
-const toggleCatalogList = () => {
-  catalogList.classList.toggle("make-visible");
-}
+var catalogLink = document.querySelectorAll(".close-catalog-list"), index, a;
 
 const addClassCatalogList = () => {
   catalogList.classList.add("make-visible");
+}
+
+const removeClassCatalogList = () => {
+  catalogList.classList.remove("make-visible");
 }
 
 openCatalogList.addEventListener("click", evt => {
@@ -18,7 +18,7 @@ openCatalogList.addEventListener("click", evt => {
 for (index = 0; index < catalogLink.length; index++) {
   a = catalogLink[index];
   a.addEventListener('click', () => {
-    toggleCatalogList();
+    removeClassCatalogList();
   });
 }
 
@@ -29,7 +29,7 @@ document.addEventListener("click", evt => {
   let catalogList_is_active = catalogList.classList.contains("make-visible");
 
   if (!its_catalogList && !its_openCatalogList && catalogList_is_active) {
-    toggleCatalogList();
+    removeClassCatalogList();
   }
 });
 

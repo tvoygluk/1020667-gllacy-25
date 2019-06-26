@@ -133,6 +133,7 @@ input[type="radio"].visually-hidden {
   margin: 0px 10px 0px 0px;
   padding: 6px 14px 7px 13px;
 }
+
 /* ================================= header/ catalog-list ================================= */
 .catalog-link:hover + .catalog-list {
   display: block;
@@ -142,7 +143,7 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
-ul.make-visible {
+ul.catalog-list.make-visible {
   display: block;
 }
 
@@ -286,6 +287,7 @@ ul.make-visible {
   margin: 0px 11px 0px -13px;
   padding: 6px 14px 7px 13px;
 }
+
 /* ================================= header/ basic-usefulness ================================= */
 .basic-usefulness {
   align-items: flex-end;
@@ -316,6 +318,22 @@ ul.make-visible {
   width: 17px;
 }
 
+.search-button:hover {
+  background-color: #f8f7f4;
+}
+
+.search-button:hover .search-icon {
+  fill: #323232;
+}
+
+.search-button:focus {
+  background-color: #f8f7f4;
+}
+
+.search-button:focus .search-icon {
+  fill: #323232;
+}
+
 /* ================================= header/ sing-in-link ================================= */
 .sing-in-link {
   background-color: rgba(255, 255, 255, 0.2);
@@ -339,11 +357,39 @@ ul.make-visible {
   margin: 8px 16px 9px 2px;
 }
 
+.sing-in-link:hover {
+  background-color: #f8f7f4;
+}
+
+.sing-in-link:hover .sing-in-icon {
+  fill: #323232;
+}
+
+.sing-in-link:hover .sing-in-text {
+  color: #323232;
+}
+
+.sing-in-link:focus {
+  background-color: #f8f7f4;
+}
+
+.sing-in-link:focus .sing-in-icon {
+  fill: #323232;
+}
+
+.sing-in-link:focus .sing-in-text {
+  color: #323232;
+}
+
 /* ================================= header/ cart-empty-link ================================= */
+.cart-empty-link.make-visible-flex {
+  display: flex;
+}
+
 .cart-empty-link {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 16px/50%;
-  display: flex;
+  display: none;
   margin-left: 10px;
 }
 
@@ -360,6 +406,40 @@ ul.make-visible {
   font-weight: 500;
   line-height: 1.14;
   margin: 8px 17px 8px 2px;
+}
+
+/* ================================= header/ cart-full-link ================================= */
+.cart-full-link.make-visible-flex {
+  display: flex;
+}
+
+.cart-full-link {
+  background-color: #f8f7f4;
+  border-radius: 16px/50%;
+  display: none;
+  margin-left: 10px;
+}
+
+.cart-full-icon {
+  height: 20px;
+  margin: 6px 5px 5px 16px;
+  width: 21px;
+}
+
+.cart-full-count {
+  color: #323232;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  margin: 8px 0px 8px 2px;
+}
+
+.cart-full-text {
+  color: #323232;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  margin: 8px 17px 8px 3px;
 }
 
 /* ================================= header/ basic-middle-schedule ================================= */
