@@ -44,13 +44,22 @@ const unMakeVisibleModalBackground = () => {
   modalBackground.classList.remove("make-visible");
 }
 
-searchButton.addEventListener("mouseenter", evt => {
-  evt.preventDefault();
+const toggleModalBackground = () => {
+  modalBackground.classList.toggle("make-visible");
+}
+
+searchButton.addEventListener("mouseenter", () => {
+  // evt.preventDefault();
   makeVisibleModalBackground();
 });
 
-searchButton.addEventListener("mouseleave", evt => {
-  evt.preventDefault();
+searchButton.addEventListener("mouseleave", () => {
+  // evt.preventDefault();
   unMakeVisibleModalBackground();
+});
+
+searchButton.addEventListener("click", evt => {
+  evt.preventDefault();
+  toggleModalBackground
 });
 

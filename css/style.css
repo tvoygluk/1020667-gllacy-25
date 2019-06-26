@@ -308,8 +308,11 @@ ul.catalog-list.make-visible {
 }
 
 /* ================================= header/ search-button ================================= */
-.search-button-wrapper {
-  z-index: 5;
+/* .search-button-wrapper {
+  z-index: 10;
+} */
+.search-button.zindex20 {
+  z-index: 20;
 }
 
 .search-button {
@@ -325,41 +328,53 @@ ul.catalog-list.make-visible {
   height: 17px;
   margin: 6px 1px 6px 1px;
   width: 17px;
-  z-index: 5;
 }
 
 .search-button-wrapper:hover .search-button {
   background-color: #f8f7f4;
-  z-index: 5;
+  /* z-index: 15; */
 }
 
 .search-button-wrapper:hover .search-icon {
   fill: #323232;
-  z-index: 5;
 }
 
-.search-button-wrapper:focus {
+.search-button-wrapper:focus .search-button {
   background-color: #f8f7f4;
-  z-index: 5;
+  /* z-index: 15; */
 }
 
 .search-button-wrapper:focus .search-icon {
   fill: #323232;
-  z-index: 5;
 }
 
 /* ================================= header/ search-input-wrapper ================================= */
 .search-input-wrapper {
   display: none;
   position: absolute;
-  z-index: 5;
+  z-index: 15;
 }
 
-.search-button:hover + .search-input-wrapper {
+.search-button-wrapper:hover + .search-input-wrapper {
   display: block;
 }
 
-.search-button:focus + .search-input-wrapper {
+.search-button-wrapper:focus + .search-input-wrapper {
+  display: block;
+}
+
+.modal-background {
+  background-color: rgba(0, 0, 0, 0.2);
+  display: none;
+  height: 100%;
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+}
+
+.modal-background.make-visible {
   display: block;
 }
 
@@ -491,17 +506,4 @@ ul.catalog-list.make-visible {
 /* ================================= main-index ================================= */
 /* ================================= footer-common ================================= */
 /* ================================= main-catalog ================================= */
-.modal-background {
-  background-color: rgba(0, 0, 0, 0.2);
-  display: none;
-  height: 100%;
-  left: 0px;
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  z-index: 2;
-}
 
-.modal-background.make-visible {
-  display: block;
-}
