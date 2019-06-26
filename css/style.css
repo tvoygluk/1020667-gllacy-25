@@ -303,6 +303,15 @@ ul.catalog-list.make-visible {
 }
 
 /* ================================= header/ search-form ================================= */
+.search-form {
+  position: relative;
+}
+
+/* ================================= header/ search-button ================================= */
+.search-button-wrapper {
+  z-index: 5;
+}
+
 .search-button {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
@@ -316,22 +325,42 @@ ul.catalog-list.make-visible {
   height: 17px;
   margin: 6px 1px 6px 1px;
   width: 17px;
+  z-index: 5;
 }
 
-.search-button:hover {
+.search-button-wrapper:hover .search-button {
   background-color: #f8f7f4;
+  z-index: 5;
 }
 
-.search-button:hover .search-icon {
+.search-button-wrapper:hover .search-icon {
   fill: #323232;
+  z-index: 5;
 }
 
-.search-button:focus {
+.search-button-wrapper:focus {
   background-color: #f8f7f4;
+  z-index: 5;
 }
 
-.search-button:focus .search-icon {
+.search-button-wrapper:focus .search-icon {
   fill: #323232;
+  z-index: 5;
+}
+
+/* ================================= header/ search-input-wrapper ================================= */
+.search-input-wrapper {
+  display: none;
+  position: absolute;
+  z-index: 5;
+}
+
+.search-button:hover + .search-input-wrapper {
+  display: block;
+}
+
+.search-button:focus + .search-input-wrapper {
+  display: block;
 }
 
 /* ================================= header/ sing-in-link ================================= */
@@ -462,3 +491,17 @@ ul.catalog-list.make-visible {
 /* ================================= main-index ================================= */
 /* ================================= footer-common ================================= */
 /* ================================= main-catalog ================================= */
+.modal-background {
+  background-color: rgba(0, 0, 0, 0.2);
+  display: none;
+  height: 100%;
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 2;
+}
+
+.modal-background.make-visible {
+  display: block;
+}
