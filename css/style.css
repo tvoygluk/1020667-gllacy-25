@@ -135,35 +135,38 @@ input[type="radio"].visually-hidden {
 }
 
 /* ================================= header/ catalog-list ================================= */
-.catalog-link:hover ~ .catalog-list {
+.catalog-link:hover ~ .catalog-list-wrapper {
   display: block;
 }
 
-.catalog-link:focus ~ .catalog-list {
+.catalog-link:focus ~ .catalog-list-wrapper {
   display: block;
 }
 
-.catalog-list:hover {
+.catalog-list-wrapper:hover {
   display: block;
 }
 
-.catalog-list:focus {
+.catalog-list-wrapper:focus {
   display: block;
 }
 
-ul.catalog-list.make-visible {
+ul.catalog-list-wrapper.make-visible {
   display: block;
 }
 
+.catalog-list-wrapper {
+  display: none;
+  left: -7px;
+  padding-top: 6px;
+  position: absolute;
+  top: 24px;
+}
 
 .catalog-list {
   background-color: #f8f7f4;
   border-radius: 4px;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
-  display: none;
-  left: -7px;
-  position: absolute;
-  top: 30px;
 }
 
 .catalog-list a {
@@ -173,6 +176,7 @@ ul.catalog-list.make-visible {
   line-height: 1.14;
 }
 
+/* TODO: сделать псевдоэлемент */
 .new-icecream-link-top {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   font-weight: bold;
@@ -211,6 +215,27 @@ ul.catalog-list.make-visible {
   background-color: #d07058;
   color: #ffffff;
 }
+
+/* .new-icecream-item-top .active-second-state {
+  background-color: #d07058;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.new-icecream-item-top:hover {
+  background-color: #fbded8;
+  border-radius: 4px;
+}
+
+.new-icecream-item-top:focus {
+  background-color: #fbded8;
+  border-radius: 4px;
+}
+
+.new-icecream-item-top:active {
+  background-color: #f6b5a5;
+  border-radius: 4px;
+} */
 
 /* ================================= header/ delivery-payment-link ================================= */
 .delivery-payment-link {

@@ -1,6 +1,6 @@
 var openCatalogList = document.querySelector(".catalog-link");
 var catalogList = document.querySelector(".catalog-list");
-var catalogLink = document.querySelectorAll(".close-catalog-list"), index, a;
+// var catalogLink = document.querySelectorAll(".close-catalog-list"), index, a;
 
 const addClassCatalogList = () => {
   catalogList.classList.add("make-visible");
@@ -15,12 +15,12 @@ openCatalogList.addEventListener("click", evt => {
   addClassCatalogList();
 });
 
-for (index = 0; index < catalogLink.length; index++) {
-  a = catalogLink[index];
-  a.addEventListener('click', () => {
-    removeClassCatalogList();
-  });
-}
+// for (index = 0; index < catalogLink.length; index++) {
+//   a = catalogLink[index];
+//   a.addEventListener('click', () => {
+//     removeClassCatalogList();
+//   });
+// }
 
 document.addEventListener("click", evt => {
   let target = evt.target;
@@ -32,35 +32,3 @@ document.addEventListener("click", evt => {
     removeClassCatalogList();
   }
 });
-
-// var searchButton = document.querySelector(".search-button-wrapper");
-// var modalBackground = document.querySelector(".modal-background");
-
-
-// const makeVisibleModalBackground = () => {
-//   modalBackground.classList.add("make-visible");
-// }
-
-// const unMakeVisibleModalBackground = () => {
-//   modalBackground.classList.remove("make-visible");
-// }
-
-// const toggleModalBackground = () => {
-//   modalBackground.classList.toggle("make-visible");
-// }
-
-// searchButton.addEventListener("mouseenter", () => {
-//   // evt.preventDefault();
-//   makeVisibleModalBackground();
-// });
-
-// searchButton.addEventListener("mouseleave", () => {
-//   // evt.preventDefault();
-//   unMakeVisibleModalBackground();
-// });
-
-// searchButton.addEventListener("click", evt => {
-//   evt.preventDefault();
-//   toggleModalBackground();
-// });
-
