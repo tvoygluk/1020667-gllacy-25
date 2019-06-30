@@ -300,10 +300,11 @@ ul.catalog-list.make-visible {
 .basic-top {
   display: flex;
   margin-bottom: 18px;
+  position: relative;
 }
 
 /* ================================= header/ search-form ================================= */
-.search-form {
+/* .search-form {
   position: relative;
 }
 
@@ -325,12 +326,25 @@ ul.catalog-list.make-visible {
 
 .modal-background:hover {
   display: block;
+} */
+
+.search-form {
+  display: none;
+  padding: 30px;
+  position: absolute;
+  top: 30px;
+  left: -150px;
+  z-index: 199;
 }
+
+
+
+
 /* ================================= header/ search-button ================================= */
 
-.z-1 {
+/* .z-1 {
   z-index: -1;
-}
+} */
 
 .search-button {
   background-color: rgba(255, 255, 255, 0.2);
@@ -338,7 +352,7 @@ ul.catalog-list.make-visible {
   border-width: 0px;
   cursor: pointer;
   display: inline-flex;
-  z-index: 55;
+  /* z-index: 55; */
 }
 
 .search-icon {
@@ -364,15 +378,53 @@ ul.catalog-list.make-visible {
   fill: #323232;
 }
 
+.search-button-wrapper {
+  z-index: 199;
+  position: relative;
+}
+
+/* ================================= header/ :hover ================================= */
+.search-button-wrapper:hover ~ .search-form {
+  display: block;
+}
+
+.search-button-wrapper:focus ~ .search-form {
+  display: block;
+}
+
+.search-button-wrapper:hover ~ .modal-background {
+  display: block;
+}
+
+.search-button-wrapper:focus ~ .modal-background {
+  display: block;
+}
+
+.search-form:hover {
+  display: block;
+}
+
+.search-form:focus-within {
+  display: block;
+}
+
+.search-form:hover ~ .modal-background {
+  display: block;
+}
+
+.search-form:focus-within ~ .modal-background {
+  display: block;
+}
+
 /* ================================= header/ search-input-wrapper ================================= */
-.search-input-wrapper {
+/* .search-input-wrapper {
   display: none;
-/* display: block; */
+
   position: absolute;
   top: 50px;
   left: -150px;
-  /* z-index: 55; */
-}
+
+} */
 
 /* .search-button-wrapper:hover + .search-input-wrapper {
   display: block;
@@ -382,6 +434,7 @@ ul.catalog-list.make-visible {
   display: block;
 } */
 
+/* ================================= header/ modal-background ================================= */
 .modal-background {
   background-color: rgba(0, 0, 0, 0.2);
   display: none;
@@ -390,7 +443,7 @@ ul.catalog-list.make-visible {
   position: fixed;
   top: 0px;
   width: 100%;
-  z-index: -1;
+  z-index: 99;
 }
 
 .modal-background.make-visible {
