@@ -165,7 +165,7 @@ ul.catalog-list-wrapper.make-visible {
 
 .catalog-list {
   background-color: #f8f7f4;
-  border-radius: 4px;
+  border-radius: 5px;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
@@ -176,12 +176,21 @@ ul.catalog-list-wrapper.make-visible {
   line-height: 1.14;
 }
 
-/* TODO: сделать псевдоэлемент */
 .new-icecream-link-top {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   font-weight: bold;
-  margin: 0px 9px 0px 6px;
-  padding: 10px 57px 12px 14px;
+  padding: 11px 20px 13px 20px;
+  position: relative;
+  width: 100%;
+}
+
+.new-icecream-link-top::after {
+  background-color: rgba(0, 0, 0, 0.2);
+  content: "";
+  height: 1px;
+  left: 6px;
+  position: absolute;
+  top: 37px;
+  width: 128px;
 }
 
 .new-icecream-item {
@@ -191,7 +200,7 @@ ul.catalog-list-wrapper.make-visible {
 .new-icecream-link {
   font-weight: 400;
   margin-top: 4px;
-  padding: 6px 18px 6px 20px;
+  padding: 6px 21px 6px 20px;
   width: 100%;
 }
 
@@ -215,27 +224,6 @@ ul.catalog-list-wrapper.make-visible {
   background-color: #d07058;
   color: #ffffff;
 }
-
-/* .new-icecream-item-top .active-second-state {
-  background-color: #d07058;
-  border-radius: 4px;
-  color: #ffffff;
-}
-
-.new-icecream-item-top:hover {
-  background-color: #fbded8;
-  border-radius: 4px;
-}
-
-.new-icecream-item-top:focus {
-  background-color: #fbded8;
-  border-radius: 4px;
-}
-
-.new-icecream-item-top:active {
-  background-color: #f6b5a5;
-  border-radius: 4px;
-} */
 
 /* ================================= header/ delivery-payment-link ================================= */
 .delivery-payment-link {
@@ -418,7 +406,15 @@ ul.catalog-list-wrapper.make-visible {
 }
 
 /* ================================= header/ search-input-wrapper ================================= */
-
+.search-input-wrapper {
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  display: flex;
+  height: 84px;
+  width: 341px;
+}
+/* TODO: Форма поиска */
 
 /* ================================= header/ modal-background ================================= */
 .modal-background {
