@@ -408,7 +408,7 @@ ul.catalog-list-wrapper.make-visible {
   display: block;
 }
 
-.search-form:focus {
+.search-form:focus-within {
   display: block;
 }
 
@@ -416,7 +416,7 @@ ul.catalog-list-wrapper.make-visible {
   display: block;
 }
 
-.search-form:focus ~ .modal-background {
+.search-form:focus-within ~ .modal-background {
   display: block;
 }
 
@@ -436,7 +436,7 @@ ul.catalog-list-wrapper.make-visible {
   border: solid 1px #d3d3d2;
   border-radius: 5px;
   margin: 20px 5px 5px 15px;
-  padding: 11px 8px 13px 13px;
+  padding: 12px 8px 13px 14px;
   width: 311px;
 }
 
@@ -564,6 +564,19 @@ ul.catalog-list-wrapper.make-visible {
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
+}
+
+.male-input,
+.password-input {
+  margin: 20px 17px 0px 17px;
+}
+
+.password-input {
+  margin-bottom: 20px;
+}
+
+.buttons {
+
 }
 
 /* ================================= header/ cart-empty-link ================================= */
