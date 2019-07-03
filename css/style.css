@@ -345,9 +345,9 @@ ul.catalog-list-wrapper.make-visible {
 /* ================================= header/ search-form ================================= */
 .search-form {
   display: none;
-  padding-top: 4px;
+  padding-top: 6px;
   position: absolute;
-  top: 32px;
+  top: 29px;
   left: -308px;
   z-index: 199;
 }
@@ -531,8 +531,40 @@ ul.catalog-list-wrapper.make-visible {
   color: #323232;
 }
 
+/* ================================= header/ sing-in-form-wrapper ================================= */
+.sing-in-link:hover ~ .sing-in-form-wrapper {
+  display: block;
+}
+
+.sing-in-link:focus ~ .sing-in-form-wrapper {
+  display: block;
+}
+
+.sing-in-form-wrapper:hover {
+  display: block;
+}
+
+.sing-in-form-wrapper:focus-within {
+  display: block;
+}
+
+.sing-in-form-wrapper {
+  display: none;
+  padding-top: 6px;
+  position: absolute;
+  right: 107px;
+  top: 30px;
+  width: 277px;
+}
+
 /* ================================= header/ sing-in-form ================================= */
-/* TODO: sing-in-form */
+.sing-in-form {
+  background-color: #f8f7f4;
+  border-radius: 5.1px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+}
 
 /* ================================= header/ cart-empty-link ================================= */
 .cart-empty-link.make-visible-flex {
