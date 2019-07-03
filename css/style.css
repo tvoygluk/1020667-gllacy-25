@@ -26,7 +26,7 @@ img {
   height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active),
+.visually-hidden,
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   border: 0;
@@ -63,6 +63,43 @@ input[type="radio"].visually-hidden {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.super-button {
+  background-color: #da512f;
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  border-width: 0px;
+  box-shadow: 0px 1px 2px 0 #ac1000;
+  display: inline-flex;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+}
+
+.super-button:hover {
+  background-color: #e97052;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(to top, #e74a35, #f26843);
+  box-shadow: 0px 1px 2px 0 #ac1000;
+}
+
+.super-button:focus {
+  background-color: #e97052;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(to top, #e74a35, #f26843);
+  box-shadow: 0px 1px 2px 0 #ac1000;
+}
+
+.super-button:active {
+  background-color: #b42a07;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(to bottom, #e74a35, #f26843);
+  box-shadow: inset 0px 2px 2px 0 #942718;
+}
+/* TODO: input:hover */
+input:hover {
+  border: solid 2px rgba(154, 154, 154, 0.52);
+  margin-bottom: 19px;
+  margin-top: 19px;
+
 }
 
 /* ================================= header/ header-common ================================= */
@@ -568,7 +605,19 @@ ul.catalog-list-wrapper.make-visible {
 
 .male-input,
 .password-input {
-  margin: 20px 17px 0px 17px;
+  margin: 20px 17px 0px 19px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: solid 1px #d3d3d2;
+  color: #999999;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  padding: 9px 10px 10px 14px;
+  width: 241px;
 }
 
 .password-input {
@@ -576,7 +625,52 @@ ul.catalog-list-wrapper.make-visible {
 }
 
 .buttons {
+  display: flex;
+}
 
+
+
+.sing-in-button {
+  border-radius: 17px/50%;
+  color: #fefefe;
+  font-size: 18px;
+  line-height: 1.33;
+  margin: 0px 21px 22px 18px;
+  padding: 11px 0px 10px 25px;
+  width: 100px;
+}
+
+
+
+.check-in-list a {
+  color: #323232;
+  font-size: 13px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.7;
+  letter-spacing: normal;
+  text-decoration: underline;
+}
+
+.forgot-password {
+  margin: 0px;
+}
+
+.new-check-in {
+  margin-top: -1px;
+}
+
+.check-in-list a:hover {
+  color: #e84d37;
+}
+
+.check-in-list a:focus {
+  color: #e84d37;
+}
+
+.check-in-list a:active {
+  color: #e84d37;
 }
 
 /* ================================= header/ cart-empty-link ================================= */
