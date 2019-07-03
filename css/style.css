@@ -79,8 +79,11 @@ input[type="radio"].visually-hidden {
 /* ================================= header/ header-nav ================================= */
 .header-nav {
   font-size: 16px;
+  font-style: normal;
+  font-stretch: normal;
   font-weight: bold;
   line-height: 1.05;
+  letter-spacing: normal;
   margin-right: auto;
   margin-top: 20.5px;
   position: relative;
@@ -178,9 +181,22 @@ ul.catalog-list-wrapper.make-visible {
 
 .new-icecream-link-top {
   font-weight: bold;
-  padding: 11px 20px 13px 20px;
+  margin: 6px 0px 7px 0px;
+  padding: 5px 20px 6px 20px;
   position: relative;
   width: 100%;
+}
+
+.new-icecream-link-top:hover {
+  background-color: #fbded8;
+}
+
+.new-icecream-link-top:focus {
+  background-color: #fbded8;
+}
+
+.new-icecream-link-top:active {
+  background-color: #f6b5a5;
 }
 
 .new-icecream-link-top::after {
@@ -189,7 +205,7 @@ ul.catalog-list-wrapper.make-visible {
   height: 1px;
   left: 6px;
   position: absolute;
-  top: 37px;
+  top: 32px;
   width: 128px;
 }
 
@@ -320,18 +336,19 @@ ul.catalog-list-wrapper.make-visible {
 
 /* ================================= header/ basic-top ================================= */
 .basic-top {
+  align-content: flex-start;
   display: flex;
-  margin-bottom: 18px;
+  margin-bottom: 19px;
   position: relative;
 }
 
 /* ================================= header/ search-form ================================= */
 .search-form {
   display: none;
-  padding: 30px;
+  padding-top: 4px;
   position: absolute;
-  top: 30px;
-  left: -150px;
+  top: 32px;
+  left: -308px;
   z-index: 199;
 }
 
@@ -342,50 +359,48 @@ ul.catalog-list-wrapper.make-visible {
   border-width: 0px;
   cursor: pointer;
   display: inline-flex;
+  height: 31px;
+  width: 33px;
+  z-index: 199;
 }
 
 .search-icon {
   fill: #ffffff;
   height: 17px;
-  margin: 6px 1px 6px 1px;
+  margin: 6px 0px 7px 1px;
   width: 17px;
 }
 
-.search-button-wrapper:hover .search-button {
+.search-button:hover {
   background-color: #f8f7f4;
 }
 
-.search-button-wrapper:hover .search-icon {
+.search-button:hover .search-icon {
   fill: #323232;
 }
 
-.search-button-wrapper:focus .search-button {
+.search-button:focus {
   background-color: #f8f7f4;
 }
 
-.search-button-wrapper:focus .search-icon {
+.search-button:focus .search-icon {
   fill: #323232;
-}
-
-.search-button-wrapper {
-  z-index: 199;
-  position: relative;
 }
 
 /* ================================= header/ :hover ================================= */
-.search-button-wrapper:hover ~ .search-form {
+.search-button:hover ~ .search-form {
   display: block;
 }
 
-.search-button-wrapper:focus ~ .search-form {
+.search-button:focus ~ .search-form {
   display: block;
 }
 
-.search-button-wrapper:hover ~ .modal-background {
+.search-button:hover ~ .modal-background {
   display: block;
 }
 
-.search-button-wrapper:focus ~ .modal-background {
+.search-button:focus ~ .modal-background {
   display: block;
 }
 
@@ -393,7 +408,7 @@ ul.catalog-list-wrapper.make-visible {
   display: block;
 }
 
-.search-form:focus-within {
+.search-form:focus {
   display: block;
 }
 
@@ -401,12 +416,13 @@ ul.catalog-list-wrapper.make-visible {
   display: block;
 }
 
-.search-form:focus-within ~ .modal-background {
+.search-form:focus ~ .modal-background {
   display: block;
 }
 
 /* ================================= header/ search-input-wrapper ================================= */
 .search-input-wrapper {
+  align-items: flex-start;
   background-color: #f8f7f4;
   border-radius: 5px;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
@@ -414,7 +430,40 @@ ul.catalog-list-wrapper.make-visible {
   height: 84px;
   width: 341px;
 }
-/* TODO: Форма поиска */
+
+.search-input {
+  background-color: #ffffff;
+  border: solid 1px #d3d3d2;
+  border-radius: 5px;
+  margin: 20px 5px 5px 15px;
+  padding: 11px 8px 13px 13px;
+  width: 311px;
+}
+
+/* ++++++++++++++++++++++++++ Префиксы ++++++++++++++++++++++++++ */
+.search-input[placeholder="Что ищем?"]::-moz-placeholder {
+  color: #999999;
+  opacity: 1;
+}
+
+.search-input::-webkit-input-placeholder {
+  color: #999999;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.search-input:-ms-input-placeholder {
+  color: #999999;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.search-input::placeholder {
+  color: #999999;
+  font-size: 14px;
+  line-height: 1.71;
+}
+/* ++++++++++++++++++++++++++ */
 
 /* ================================= header/ modal-background ================================= */
 .modal-background {
@@ -437,7 +486,7 @@ ul.catalog-list-wrapper.make-visible {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 16px/50%;
   display: flex;
-  margin-left: 10px;
+  margin-left: 11px;
 }
 
 .sing-in-icon {
@@ -450,9 +499,12 @@ ul.catalog-list-wrapper.make-visible {
 .sing-in-text {
   color: #ffffff;
   font-size: 14px;
+  font-style: normal;
+  font-stretch: normal;
   font-weight: 500;
   line-height: 1.14;
-  margin: 8px 16px 9px 2px;
+  letter-spacing: normal;
+  margin: 8px 16px 8px 2px;
 }
 
 .sing-in-link:hover {
@@ -479,6 +531,9 @@ ul.catalog-list-wrapper.make-visible {
   color: #323232;
 }
 
+/* ================================= header/ sing-in-form ================================= */
+/* TODO: sing-in-form */
+
 /* ================================= header/ cart-empty-link ================================= */
 .cart-empty-link.make-visible-flex {
   display: flex;
@@ -501,8 +556,11 @@ ul.catalog-list-wrapper.make-visible {
 .cart-empty-text {
   color: #ffffff;
   font-size: 14px;
+  font-style: normal;
+  font-stretch: normal;
   font-weight: 500;
   line-height: 1.14;
+  letter-spacing: normal;
   margin: 8px 17px 8px 2px;
 }
 
@@ -516,11 +574,12 @@ ul.catalog-list-wrapper.make-visible {
   border-radius: 16px/50%;
   display: none;
   margin-left: 10px;
+  margin-top: 0px;
 }
 
 .cart-full-icon {
   height: 20px;
-  margin: 6px 5px 5px 16px;
+  margin: 6px 5px 2px 16px;
   width: 21px;
 }
 
@@ -529,7 +588,7 @@ ul.catalog-list-wrapper.make-visible {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
-  margin: 8px 0px 8px 2px;
+  margin: 8px 0px 5px 2px;
 }
 
 .cart-full-text {
@@ -537,7 +596,7 @@ ul.catalog-list-wrapper.make-visible {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
-  margin: 8px 17px 8px 3px;
+  margin: 8px 17px 5px 3px;
 }
 
 /* ================================= header/ basic-middle-schedule ================================= */
