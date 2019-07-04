@@ -913,7 +913,6 @@ ul.catalog-list-wrapper.make-visible {
   font-stretch: normal;
   font-style: normal;
   font-weight: normal;
-  /* letter-spacing: 0.2px; */
   line-height: 1.23;
   margin-top: 9px;
 }
@@ -942,13 +941,44 @@ ul.catalog-list-wrapper.make-visible {
   margin-right: 4px;
 }
 
-.price-kilo {
+span.price-kilo {
+  color: #999999;
   margin-right: 3px;
+}
+
+span.price-currency {
+  color: #999999;
 }
 
 .sum-price {
   margin-left: auto;
   margin-right: 2px;
+}
+
+.result {
+  color: #323232;
+  font-size: 15px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: normal;
+  line-height: 1.2;
+  margin-left: auto;
+  margin-right: 13px;
+  margin-top: 19px;
+  margin-bottom: 14px;
+}
+
+.checkout-order {
+  border-radius: 17px/50%;
+  color: #fefefe;
+  font-size: 18px;
+  line-height: 1.33;
+  margin-left: auto;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  padding: 9px 0px 13px 15px;
+  width: 170px;
 }
 
 /* ================================= header/ basic-middle-schedule ================================= */
