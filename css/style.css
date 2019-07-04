@@ -868,13 +868,13 @@ ul.catalog-list-wrapper.make-visible {
 .pre-order-item {
   align-items: flex-start;
   display: flex;
-  margin:  20px 34px 0px 16px;
+  margin: 18.5px 34px 0px 16px;
 }
 
 .pre-order-link {
   align-items: flex-start;
   display: flex;
-  width: 308px;
+  width: 263px;
 }
 
 .item-close {
@@ -882,7 +882,7 @@ ul.catalog-list-wrapper.make-visible {
   background-color: transparent;
   border-width: 0px;
   display: inline-flex;
-  margin: 0px 0px 0px 0px;
+  margin: 11px 14px 0px 0px;
   padding: 0px;
 }
 
@@ -893,6 +893,7 @@ ul.catalog-list-wrapper.make-visible {
 
 .little-pic-icecream {
   border-radius: 50%;
+  margin-right: 13px;
 }
 
 .pre-order-title {
@@ -903,13 +904,12 @@ ul.catalog-list-wrapper.make-visible {
   font-weight: normal;
   letter-spacing: normal;
   line-height: 1.23;
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
+  margin-top: 9px;
 }
 
 .money-math {
   display: flex;
-  margin: 0px 0px 0px 0px;
+  margin: 9px 0px 0px 30px;
   width: 171px;
 }
 
@@ -922,7 +922,9 @@ ul.catalog-list-wrapper.make-visible {
   letter-spacing: normal;
   line-height: 1.23;
 }
-
+.count-kilo {
+  margin-right: 10px;
+}
 .sum-price {
   margin-left: auto;
 }
