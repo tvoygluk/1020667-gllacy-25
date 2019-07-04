@@ -852,8 +852,80 @@ ul.catalog-list-wrapper.make-visible {
 }
 
 /* ================================= header/ pre-order ================================= */
+.pre-order {
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+}
 
+.pre-order-list {
+  display: flex;
+  flex-direction: column;
+}
 
+.pre-order-item {
+  align-items: flex-start;
+  display: flex;
+  margin:  20px 34px 0px 16px;
+}
+
+.pre-order-link {
+  align-items: flex-start;
+  display: flex;
+  width: 308px;
+}
+
+.item-close {
+  cursor: pointer;
+  background-color: transparent;
+  border-width: 0px;
+  display: inline-flex;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+}
+
+.item-close-icon {
+  height: 11px;
+  width: 11px;
+}
+
+.little-pic-icecream {
+  border-radius: 50%;
+}
+
+.pre-order-title {
+  color: #323232;
+  font-size: 13px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1.23;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.money-math {
+  display: flex;
+  margin: 0px 0px 0px 0px;
+  width: 171px;
+}
+
+.money-math span {
+  color: #323232;
+  font-size: 13px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1.23;
+}
+
+.sum-price {
+  margin-left: auto;
+}
 
 /* ================================= header/ basic-middle-schedule ================================= */
 .basic-middle-schedule {
