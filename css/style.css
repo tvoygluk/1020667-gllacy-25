@@ -94,13 +94,6 @@ input[type="radio"].visually-hidden {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(to bottom, #e74a35, #f26843);
   box-shadow: inset 0px 2px 2px 0 #942718;
 }
-/* TODO: input:hover */
-input:hover {
-  border: solid 2px rgba(154, 154, 154, 0.52);
-  margin-bottom: 19px;
-  margin-top: 19px;
-
-}
 
 /* ================================= header/ header-common ================================= */
 .header-common {
@@ -472,32 +465,60 @@ ul.catalog-list-wrapper.make-visible {
   background-color: #ffffff;
   border: solid 1px #d3d3d2;
   border-radius: 5px;
+  color: #323232;
+  font-size: 16px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: normal;
+  line-height: 1.5;
   margin: 20px 5px 5px 15px;
   padding: 12px 8px 13px 14px;
   width: 311px;
 }
 
-/* ++++++++++++++++++++++++++ Префиксы ++++++++++++++++++++++++++ */
+.search-input:hover {
+  border: solid 2px rgba(154, 154, 154, 0.52);
+  padding: 11px 8px 13px 13px;
+}
+
+.search-input:focus {
+  border: solid 2px rgba(154, 154, 154, 0.52);
+  outline-color: rgba(154, 154, 154, 0.52);
+  padding: 11px 8px 13px 13px;
+}
+
+.search-input:active {
+  border: solid 2px rgba(46, 136, 228, 0.52);
+  outline-color: rgba(46, 136, 228, 0.52);
+  padding: 11px 8px 13px 13px;
+}
+
+/* ++++++++++++++++++++++++++ Префиксы .search-input::placeholder ++++++++++++++++++++++++++ */
 .search-input[placeholder="Что ищем?"]::-moz-placeholder {
   color: #999999;
+  font-weight: 400;
   opacity: 1;
 }
 
 .search-input::-webkit-input-placeholder {
   color: #999999;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.71;
 }
 
 .search-input:-ms-input-placeholder {
   color: #999999;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.71;
 }
 
 .search-input::placeholder {
   color: #999999;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.71;
 }
 /* ++++++++++++++++++++++++++ */
@@ -609,13 +630,13 @@ ul.catalog-list-wrapper.make-visible {
   background-color: #ffffff;
   border-radius: 5px;
   border: solid 1px #d3d3d2;
-  color: #999999;
-  font-size: 14px;
+  color: #323232;
+  font-size: 16px;
   font-stretch: normal;
   font-style: normal;
-  font-weight: normal;
-  line-height: 1.71;
+  font-weight: bold;
   letter-spacing: normal;
+  line-height: 1.5;
   padding: 9px 10px 10px 14px;
   width: 241px;
 }
@@ -624,11 +645,79 @@ ul.catalog-list-wrapper.make-visible {
   margin-bottom: 20px;
 }
 
+/* ++++++++++++++++++++++++++ Префиксы .male-input::placeholder, .password-input::placeholder ++++++++++++++++++++++++++ */
+.male-input[placeholder="Электронная почта"]::-moz-placeholder,
+.password-input[placeholder="Пароль"]::-moz-placeholder {
+  color: #999999;
+  font-weight: 400;
+  opacity: 1;
+}
+
+.male-input::-webkit-input-placeholder,
+.password-input::-webkit-input-placeholder {
+  color: #999999;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+}
+
+.male-input:-ms-input-placeholder,
+.password-input:-ms-input-placeholder {
+  color: #999999;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+}
+
+.male-input::placeholder,
+.password-input::placeholder {
+  color: #999999;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+}
+/* ++++++++++++++++++++++++++ */
+
+/* ================================= header/ sing-in-form/ male-input, password-input:hover... ================================= */
+.male-input:hover,
+.password-input:hover {
+  border: solid 2px rgba(154, 154, 154, 0.52);
+  margin: 20px 17px -1px 19px;
+  padding: 8px 10px 10px 13px;
+}
+
+.password-input:hover {
+  margin-bottom: 19px;
+}
+
+.male-input:focus,
+.password-input:focus {
+  border: solid 2px rgba(154, 154, 154, 0.52);
+  margin: 20px 17px -1px 19px;
+  outline-color: rgba(154, 154, 154, 0.52);
+  padding: 8px 10px 10px 13px;
+}
+
+.password-input:focus {
+  margin-bottom: 19px;
+}
+
+.male-input:active,
+.password-input:active {
+  border: solid 2px rgba(46, 136, 228, 0.52);;
+  margin: 20px 17px -1px 19px;
+  outline-color: rgba(46, 136, 228, 0.52);;
+  padding: 8px 10px 10px 13px;
+}
+
+.password-input:active {
+  margin-bottom: 19px;
+}
+
+/* ================================= header/ sing-in-form/ .buttons ================================= */
 .buttons {
   display: flex;
 }
-
-
 
 .sing-in-button {
   border-radius: 17px/50%;
@@ -639,8 +728,6 @@ ul.catalog-list-wrapper.make-visible {
   padding: 11px 0px 10px 25px;
   width: 100px;
 }
-
-
 
 .check-in-list a {
   color: #323232;
@@ -737,6 +824,36 @@ ul.catalog-list-wrapper.make-visible {
   line-height: 1.14;
   margin: 8px 17px 5px 3px;
 }
+
+/* ================================= header/ pre-order-wrapper ================================= */
+.cart-full-link:hover ~ .pre-order-wrapper {
+  display: block;
+}
+
+.cart-full-link:focus ~ .pre-order-wrapper {
+  display: block;
+}
+
+.pre-order-wrapper:hover {
+  display: block;
+}
+
+.pre-order-wrapper:focus-within {
+  display: block;
+}
+
+.pre-order-wrapper {
+  display: none;
+  padding-top: 6px;
+  position: absolute;
+  right: 40px;
+  top: 30px;
+  width: 540px;
+}
+
+/* ================================= header/ pre-order ================================= */
+
+
 
 /* ================================= header/ basic-middle-schedule ================================= */
 .basic-middle-schedule {
