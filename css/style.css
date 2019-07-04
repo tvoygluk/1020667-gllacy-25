@@ -846,7 +846,7 @@ ul.catalog-list-wrapper.make-visible {
   display: none;
   padding-top: 6px;
   position: absolute;
-  right: 40px;
+  right: 0px;
   top: 30px;
   width: 540px;
 }
@@ -863,6 +863,17 @@ ul.catalog-list-wrapper.make-visible {
 .pre-order-list {
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.pre-order-list::after {
+  background-color: #cacac7;
+  bottom: -5px;
+  content: "";
+  height: 1px;
+  left: 14px;
+  position: absolute;
+  width: 510px;
 }
 
 .pre-order-item {
@@ -902,7 +913,7 @@ ul.catalog-list-wrapper.make-visible {
   font-stretch: normal;
   font-style: normal;
   font-weight: normal;
-  letter-spacing: normal;
+  /* letter-spacing: 0.2px; */
   line-height: 1.23;
   margin-top: 9px;
 }
@@ -922,11 +933,22 @@ ul.catalog-list-wrapper.make-visible {
   letter-spacing: normal;
   line-height: 1.23;
 }
+
 .count-kilo {
-  margin-right: 10px;
+  margin-right: 3px;
 }
+
+.count-kilo-after {
+  margin-right: 4px;
+}
+
+.price-kilo {
+  margin-right: 3px;
+}
+
 .sum-price {
   margin-left: auto;
+  margin-right: 2px;
 }
 
 /* ================================= header/ basic-middle-schedule ================================= */
